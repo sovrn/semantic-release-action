@@ -1,31 +1,13 @@
 name: 'Action For Semantic Release'
 description: 'GitHub Action for Semantic Release'
-author: 'cycjimmy'
+author: 'sovrn'
 branding:
   icon: 'package'
   color: 'orange'
 inputs:
-  semantic_version:
-    required: false
-    description: 'Specify specifying version range for semantic-release. If no version range is specified, latest version will be used by default'
-  branches:
-    required: false
-    description: 'The branches on which releases should happen. It will override the branches attribute in your configuration file. Support for semantic-release above v16. See https://semantic-release.gitbook.io/semantic-release/usage/configuration#branches for more information.'
-  branch:
-    required: false
-    description: 'The branch on which releases should happen. It will override the branch attribute in your configuration file. If the attribute is not configured on both sides, the default is master. Support for semantic-release older than v16.'
-  extra_plugins:
-    required: false
-    description: 'Extra plugins for pre-install. You can also specify specifying version range for the extra plugins if you prefer.'
   dry_run:
     required: false
     description: 'Whether to run semantic release in `dry-run` mode. It will override the dryRun attribute in your configuration file'
-  extends:
-    required: false
-    description: 'One or several sharable configurations, https://semantic-release.gitbook.io/semantic-release/usage/configuration#extends'
-  working_directory:
-    required: false
-    description: 'Specify another working directory for semantic release. Default one is provided by github.'
 outputs:
   new_release_published:
     description: 'Whether a new release was published'
@@ -44,5 +26,5 @@ outputs:
   last_release_version:
     description: 'Version of the previous release, if there was one.'
 runs:
-  using: 'node12'
+  using: 'node16'
   main: 'index.js'
