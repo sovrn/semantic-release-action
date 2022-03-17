@@ -1,6 +1,6 @@
 {
-  "name": "@cycjimmy/semantic-release-action",
-  "version": "2.7.0",
+  "name": "@sovrn/semantic-release-action",
+  "version": "1.0.0",
   "description": "GitHub Action for Semantic Release",
   "main": "index.js",
   "scripts": {
@@ -8,20 +8,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cycjimmy/semantic-release-action.git"
+    "url": "git+https://github.com/sovrn/semantic-release-action.git"
   },
   "keywords": [
     "semantic-release",
     "action"
   ],
-  "author": "cycjimmy <cycjimmy@gmail.com> (https://github.com/cycjimmy)",
+  "author": "sovrn",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/cycjimmy/semantic-release-action/issues"
+    "url": "https://github.com/sovrn/semantic-release-action/issues"
   },
-  "homepage": "https://github.com/cycjimmy/semantic-release-action#readme",
+  "homepage": "https://github.com/sovrn/semantic-release-action#readme",
   "dependencies": {
-    "@actions/core": "^1.6.0",
-    "@cycjimmy/awesome-js-funcs": "^3.1.0"
+    "@actions/core": "1.6.0"
   }
 }
